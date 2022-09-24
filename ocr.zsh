@@ -8,8 +8,6 @@ for file in tmp/*; do
   rm "$file"
 done
 
-echo "====================";
-
 cd tmp
 file_array=("${(@f)$(ls -1)}")
 pdfunite $file_array ../${1:t:r}_searchable.pdf
